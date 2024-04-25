@@ -1,0 +1,82 @@
+﻿@model Mvc_Ogrenci_Kayit.Models.Table
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Table</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.OgrAd)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.OgrAd)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.OgrSoyad)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.OgrSoyad)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.OgrMail)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.OgrMail)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.OgrFotograf)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.OgrFotograf)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.OgrAdres)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.OgrAdres)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.OgrKredi)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.OgrKredi)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.OgrNumara)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.OgrNumara)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.OgrBolum)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.OgrBolum)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.OgrID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
